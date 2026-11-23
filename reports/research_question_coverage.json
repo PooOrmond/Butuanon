@@ -1,0 +1,25 @@
+{
+  "RQ1_baseline_translation": true,
+  "RQ2_lora_translation_and_efficiency": true,
+  "RQ3_backtranslation_effect": true,
+  "RQ4_statistical_translation": true,
+  "RQ5_significant_computational_differences": true,
+  "independent_training_runs_per_configuration": {
+    "baseline": 5,
+    "lora": 5,
+    "combined": 5
+  },
+  "preprocessing": {
+    "original_rows": 12156,
+    "removed_missing_or_empty": 0,
+    "removed_duplicate_pairs": 4495,
+    "removed_token_length": 0,
+    "cleaned_rows": 7661,
+    "split_counts": {
+      "train": 5363,
+      "validation": 1149,
+      "test": 1149
+    }
+  },
+  "resources_consistency_warning": "Ensure all five seeds and all three configurations were trained on the same GPU hardware."
+}
